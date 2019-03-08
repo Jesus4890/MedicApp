@@ -1,10 +1,10 @@
 {
-  "short_name": "",
-  "name": "",
+  "short_name": "MedicApp",
+  "name": "Sistema de control de recetas y tratamientos",
   "icons": [{
-    "src": "icon.png",
+    "src": "/img/logo.png",
     "type": "image/png",
-    "sizes": "192x192"
+    "sizes": "184x192"
   }],
   "start_url": "/?utm_source=homescreen",
   "background_color": "#fafafa",
