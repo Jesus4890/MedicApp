@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="description" content="Sistema de control de recetas y tratamientos, sistema elaborado para la materia de Ingenieria de Requerimientos, Universidad Politecnica de Victoria, Cd. Victoria, Tamps. Ingenieria en tecnologias de la informacion.">
+	<meta name="author" content="Universidad Politecnica De Victoria">
+	<meta name="theme-color" content="#4CAF50">
+	<link rel="icon" type="image/png" href="img/logo.png"/>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<title>Agregar doctor</title>
+</head>
+<body>
+	<!-- BARRA DE LA PARTE SUPERIOR DE LA PAGINA -->
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">MedicApp</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Pacientes <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Doctores</a>
+				</li>
+			</ul>
+		</div>
+		<div class="dropdown">
+			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Administrador
+			</button>
+			<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+				<button class="dropdown-item" type="button">Ver perfil</button>
+				<button class="dropdown-item" type="button" onclick="window.location.href='index.html'">Cerrar sesion</button>
+			</div>
+		</div>
+	</nav>
+
+
+	<main style="margin-top: 25px; display: block;
+  margin-right: auto;
+  margin-left: auto;">
+		<div class="container">
+			<div class="col-12">
+				<div class="card">
+				  <h5 class="card-header">Agregar doctor</h5>
+				  <div class="card-body">
+				    <h5 class="card-title">Ingresa los datos correctamente.</h5>
+					<form action="" method="post" id="formulario">
+					<div class="row">
+						<div class="col-6">
+							<div class="form-group">
+						    	<label for="nombre_completo">Nombre completo*</label>
+						    	<input type="text" class="form-control" id="nombre_completo" placeholder="Juan Jose" required>
+						  	</div>
+						</div>
+						<div class="col-6">
+							<div class="form-group">
+						    	<label for="apellidos">Apellidos*</label>
+						    	<input type="text" class="form-control" id="apellidos" placeholder="Perez Dominguez" required>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-4">
+							<div class="form-group">
+						    	<label for="fecha_nacimiento">Fecha de nacimiento*</label>
+						    	<input type="date" class="form-control" id="fecha_nacimiento" placeholder="15-Mayo-2011" required>
+						  	</div>
+						</div>
+						<div class="col-4">
+							<div class="form-group">
+						    	<label for="email">Correo electronico*</label>
+						    	<input type="email" class="form-control" id="email" placeholder="ejemplo@direccion.com" required>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="form-group">
+						    	<label for="telefono">Telefono*</label>
+						    	<input type="tel" class="form-control" id="telefono" placeholder="834-678-4945" pattern="[0-9]{3}[-][0-9]{3}[-][0-9]{4}" required>
+							</div>
+						</div>
+					</div>
+						</form>
+					<div class="row">
+						<div class="col-6">
+							<div class="form-group">
+						    	<label for="pasatiempos">Pasatiempos</label>
+						    	<input type="text" class="form-control" id="pasatiempos" placeholder="..." required>
+						  	</div>
+						</div>
+						<div class="col-6">
+							<div class="form-group">
+						    	<label for="estilo_conducta">Estilo de conducta</label>
+						    	<input type="text" class="form-control" id="estilo_conducta" placeholder="..." required>
+							</div>
+						</div>
+					</div>
+
+
+
+				    <p class="card-text">* Datos obligatorios</p>
+				    <button class="btn btn-primary" type="submit" form="formulario" value="Guardar">Guardar</button>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>
